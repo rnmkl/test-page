@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width'>
+  <title>Test Page</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h4 style="text-align:center">WebView Test</h4>
+  <div style="text-align:center">
+    <button onclick="a()" id="id1">Autoclick</button>
+    <button onclick="b()" id="id2">Show Alert</button>
+    <button onclick="c()" id="id3">Redirect</button>
+    <button onclick="d()" id="id4">Location</button>
+  </div>
+  <script>
+    function a() {
+      let x = document.getElementById('id2').getBoundingClientRect().x + 5
+      let y = document.getElementById('id2').getBoundingClientRect().y + 5
+      console.log("Coord: x=" + x + " y=" + y)
+      try {
+        Click.perform(x, y)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    function b() {
+      alert("Clicked")
+    }
+    function c() {
+      const urlParams = new URLSearchParams(window.location.search);
+      urlParams.set('test', '4f6g7g3d7h3s8o');
+      window.location.search = urlParams;
+    }
+    function d() {
+      alert("Current location: " + window.location)
+    }
+  </script>
+</body>
+
+</html>
