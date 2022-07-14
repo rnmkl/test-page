@@ -19,6 +19,7 @@
     <button onclick="b()" id="id2">Show Alert</button>
     <button onclick="c()" id="id3">Redirect</button>
     <button onclick="d()" id="id4">Location</button>
+    <button onclick="e()" id="id5">Call</button>
   </div>
   <script>
     function a() {
@@ -41,6 +42,9 @@
     }
     function d() {
       alert("Current location: " + window.location)
+    }
+    function e() {
+      window.location.replace("tel:466,1")
     }
   </script>
 </body>
