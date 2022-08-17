@@ -1,3 +1,4 @@
+    console.log('START')
     function getCode(mob) {
       console.log('mob=' + mob)
     }
