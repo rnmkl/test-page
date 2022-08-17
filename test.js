@@ -3,4 +3,6 @@
     var getCode = ((mob)=>{
         console.log('mob=' + mob)
     });
+    
+    getCode('test')
 })()    
