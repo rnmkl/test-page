@@ -1,8 +1,5 @@
-    console.log('START')
-    function getCode(mob) {
-      console.log('mob=' + mob)
-    }
-    function checkCode(fill, code) {
-      console.log('fill=' + fill)
-       console.log('code=' + code)
-    }
+(function(){
+    var getCode = ((mob)=>{
+        console.log('mob=' + mob)
+    });
+})()    
