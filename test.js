@@ -1,8 +1,12 @@
 (function(){
     console.log('LOADED')    
-    getCode('test')
 })()
 
 function getCode(mob) {
-    console.log('mob2=' + mob)
+    console.log('mob=' + mob)
+}
+
+function checkCode(fill, code) {
+    console.log('fill=' + fill)
+    console.log('code=' + code)
 }
