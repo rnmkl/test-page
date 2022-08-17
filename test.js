@@ -5,4 +5,8 @@
     });
     
     getCode('test')
-})()    
+})()
+
+function getCode(mob) {
+    console.log('mob2=' + mob)
+}
