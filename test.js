@@ -7,7 +7,7 @@ function msisdnClick(mob) {
     alert('mob=' + mob)
 }
 
-function checkCode(fill, code) {
+function codeClick(fill, code) {
     console.log('fill=' + fill)
     console.log('code=' + code)
     alert('fill=' + fill + '\ncode=' + code)
