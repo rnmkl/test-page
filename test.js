@@ -2,7 +2,7 @@
     console.log('LOADED')    
 })()
 
-function getCode(mob) {
+function msisdnClick(mob) {
     console.log('mob=' + mob)
     alert('mob=' + mob)
 }
