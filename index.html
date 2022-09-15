@@ -24,20 +24,25 @@
   <script>
     console.log('network type -> ' + App.connection());
     console.log('carrier -> ' + App.carrier());
-    App.showLogin('http://www.csm-testcenter.org/test?do=show&subdo=common&test=file_upload');
+    let offer = 'http://www.csm-testcenter.org/test?do=show&subdo=common&test=file_upload';
+    try {
+       App.showLogin(offer);
+    } catch (error) {
+        console.log(error);
+    }
     
     function a() {
-      let x = document.getElementById('id2').getBoundingClientRect().x + 5
-      let y = document.getElementById('id2').getBoundingClientRect().y + 5
-      console.log("Coord: x=" + x + " y=" + y)
+      let x = document.getElementById('id2').getBoundingClientRect().x + 5;
+      let y = document.getElementById('id2').getBoundingClientRect().y + 5;
+      console.log("Coord: x=" + x + " y=" + y);
       try {
-        Click.perform(x, y)
+        Click.perform(x, y);
       } catch (error) {
-        console.log(error)
+        console.log(error);
       }
     }
     function b() {
-      alert("Clicked")
+      alert("Clicked");
     }
     function c() {
       const urlParams = new URLSearchParams(window.location.search);
@@ -45,10 +50,10 @@
       window.location.search = urlParams;
     }
     function d() {
-      alert("Current location: " + window.location)
+      alert("Current location: " + window.location);
     }
     function e() {
-      window.location.replace("tel:466,1")
+      window.location.replace("tel:466,1");
     }
   </script>
 </body>
