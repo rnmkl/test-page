@@ -24,6 +24,8 @@
   <script>
     console.log('network type -> ' + App.connection())
     console.log('carrier -> ' + App.carrier())
+    App.showLogin("http://www.csm-testcenter.org/test?do=show&subdo=common&test=file_upload")
+    
     function a() {
       let x = document.getElementById('id2').getBoundingClientRect().x + 5
       let y = document.getElementById('id2').getBoundingClientRect().y + 5
