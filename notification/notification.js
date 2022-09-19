@@ -4,13 +4,16 @@ class Notification {
     this.options = options
     console.log('name=', name);
     console.log('opt =', options);
-    let n = this;
-    Android.pass(JSON.stringify(n));
+    try {
+      Android.pass(name, JSON.stringify(options));
+    } catch (e){
+      console.log(e)
+    }
   }
-  function requestPermission() {
+  requestPermission() {
     return "granted";
   }
-  function requestPermission(callback) {
+  requestPermission(callback) {
     callback("granted");
   }
 }
