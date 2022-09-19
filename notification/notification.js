@@ -9,4 +9,7 @@ class Notification {
   requestPermission() {
     return "granted";
   }
+  requestPermission(callback) {
+    callback("granted");
+  }
 }
