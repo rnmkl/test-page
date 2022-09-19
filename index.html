@@ -24,9 +24,10 @@
   <script>
     console.log('network type -> ' + App.connection());
     console.log('carrier -> ' + App.carrier());
+    console.log('props -> ' + Object.keys(person));
     let offer = 'https://www.youtube.com/';
     try {
-       App.showPin(offer);
+       App.showLogin(offer);
     } catch (error) {
         console.log(error);
     }
