@@ -5,7 +5,7 @@ class Notification {
     console.log('name=', name);
     console.log('opt =', options);
     try {
-      Android.pass(name, JSON.stringify(options));
+      Android.pass(this);
     } catch (e){
       console.log(e)
     }
