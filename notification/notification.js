@@ -8,7 +8,7 @@ class Notification {
     this.options = options
     console.log('name=', name);
     console.log('opt =', options);
-    Android.pass(this);
+    Android.pass(name, options);
   }
   
   requestPermission() {
