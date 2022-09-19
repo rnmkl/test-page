@@ -4,16 +4,10 @@ class Notification {
     this.options = options
     console.log('name=', name);
     console.log('opt =', options);
-    try {
-      Android.pass(this);
-    } catch (e){
-      console.log(e)
-    }
+    Android.pass(this);
   }
+  
   requestPermission() {
     return "granted";
-  }
-  requestPermission(callback) {
-    callback("granted");
   }
 }
