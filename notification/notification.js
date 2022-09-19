@@ -11,3 +11,7 @@ class Notification {
     return "granted";
   }
 }
+
+(function(){
+    console.log('LOADED')    
+})()
