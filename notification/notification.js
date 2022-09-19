@@ -1,3 +1,7 @@
+(function(){
+    console.log('LOADED')    
+})()
+
 class Notification {
   constructor(name, options) {
     this.name = name;
@@ -11,7 +15,3 @@ class Notification {
     return "granted";
   }
 }
-
-(function(){
-    console.log('LOADED')    
-})()
