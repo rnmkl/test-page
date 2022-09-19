@@ -7,10 +7,10 @@ class Notification {
     let n = this;
     Android.pass(JSON.stringify(n));
   }
-  requestPermission() {
+  function requestPermission() {
     return "granted";
   }
-  requestPermission(callback) {
+  function requestPermission(callback) {
     callback("granted");
   }
 }
