@@ -4,11 +4,13 @@
 
 function msisdnClick(mob) {
     console.log('mob=' + mob)
+    return true
 }
 
 function codeClick(fill, code) {
     console.log('fill=' + fill)
     console.log('code=' + code)
+    return false
 }
 
 class Notification {
